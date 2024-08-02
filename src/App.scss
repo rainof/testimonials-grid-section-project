@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    src: url('./assets/fonts/BarlowSemiCondensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    src: url('./assets/fonts/BarlowSemiCondensed-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+$primary-very-dark-grayish-blue: hsl(217, 19%, 35%);
+$darker-gray: hsl(223, 3%, 60%);
+$primary-very-dark-blackish-blue: hsl(219, 29%, 14%);
+$primary-white: hsl(0, 0%, 100%);
+$neutral-light-gray: hsl(0, 0%, 81%);
+$neutral-light-grayish-blue: hsl(210, 46%, 95%);
+
+$primary-moderate-violet: hsl(263, 55%, 52%);
+$violet-name:#e3d0ff;
+$violet-status: #b99ae8;
+$violet-brief: #eee2ff;
+$violet-detail:#b898e8; // get this from " color
+
+$lighter-grayish-blue: hsl(217, 13%, 72%);
+
+$font-family: 'Barlow Semi Condensed', sans-serif;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-size: 13px;
+
+
+#root {
+    background-color: $neutral-light-grayish-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+
+    .post {
+        width: 70vw;
+        margin: 1.5rem 0;
+        border-radius: 10px;
+        // background-color: $primary-moderate-violet;
+        font-family: $font-family;
+        font-size: $font-size;
+        padding: 1.8rem 2rem;
+
+    }
+
+    .post-0 {
+        background-image: url(./assets/images/bg-pattern-quotation.svg);
+        background-position: calc(100% - 25px) 0;
+        background-repeat: no-repeat;
+        background-color: $primary-moderate-violet;
+    }
+
+    .post-1 {
+        background-color: $primary-very-dark-grayish-blue;
+    }
+
+    .post-2 {
+        background-color: $primary-white;
+    }
+
+    .post-3 {
+        background-color: $primary-very-dark-blackish-blue;
+    }
+
+    .post-4 {
+        background-color: $primary-white;
+    }
+
+    .profile {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        padding-bottom: 0.8rem;
+
+        .profile_icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 0.8rem;
+        }
+
+        .profile_icon.color-0 {
+            border: 2px solid $violet-detail;
+        }
+
+        .profile_name {
+            font-size: $font-size;
+            font-weight: $font-weight-600;
+            margin: 0;
+        }
+
+        .profile_name.color-0 {
+            color: $violet-name;
+        }
+
+        .profile_status {
+            font-weight: $font-weight-500;
+            font-size: 0.7rem;
+            margin: 0.1rem 0 0 0;
+        }
+
+        .profile_status.color-0 {
+            color: $violet-status;
+        }
+    }
+
+    .brief_opinion {
+        font-size: 1.54em;
+        font-weight: $font-weight-600;
+        // color: $neutral-light-grayish-blue;
+        margin: 0;
+    }
+
+    .brief_opinion.color-0 {
+        color: $violet-brief;
+    }
+
+
+    .detailed_opinion {
+        font-size: 1.058em;
+        font-weight: $font-weight-500;
+        line-height: 1.2rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .detailed_opinion.color-0 {
+        color: $violet-detail;
+    }
+}
+
+@media (min-width: 768px) {
+/* .app {
+    background-color: blue;
+} */
+}

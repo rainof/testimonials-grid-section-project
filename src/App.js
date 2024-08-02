@@ -1,5 +1,4 @@
-import './App.css';
-import pattern_bg from './assets/images/bg-pattern-quotation.svg';
+import './App.scss';
 import image_daniel from './assets/images/image-daniel.jpg';
 import image_jonathan from './assets/images/image-jonathan.jpg';
 import image_jeanette from './assets/images/image-jeanette.jpg';
@@ -16,17 +15,22 @@ function App({data}) {
   ]
 
   return (
-    <div id="postContainer">
+    <div className="app">
       {data.post.map((post, index) => (
-        <div key={index} className={`post post-${index % 2}`}>
-          <img
-            src={image_files[index % image_files.length]}
-            alt={`icon-${index + 1}`}
-          />
-          <h2>{post.name}</h2>
-          <p>{post.status}</p>
-          <p>{post.brief_opinion}</p>
-          <p>{post.detailed_opinion}</p>
+        <div key={index} className={`post post-${index % 5}`}>
+          <div className="profile">
+            <img
+              className={`profile_icon color-${index % 5}`}
+              src={image_files[index % image_files.length]}
+              alt={`icon-${index + 1}`}
+            />
+            <div>
+              <p className={`profile_name color-${index % 5}`}>{post.name}</p>
+              <p className={`profile_status color-${index % 5}`}>{post.status}</p>
+            </div>
+          </div>
+          <p className={`brief_opinion color-${index % 5}`}>{post.brief_opinion}</p>
+          <p className={`detailed_opinion color-${index % 5}`}>{post.detailed_opinion}</p>
         </div>
       ))}
     </div>
