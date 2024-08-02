@@ -12,9 +12,7 @@
     font-style: normal;
 }
 
-$primary-very-dark-grayish-blue: hsl(217, 19%, 35%);
 $darker-gray: hsl(223, 3%, 60%);
-$primary-very-dark-blackish-blue: hsl(219, 29%, 14%);
 $primary-white: hsl(0, 0%, 100%);
 $neutral-light-gray: hsl(0, 0%, 81%);
 $neutral-light-grayish-blue: hsl(210, 46%, 95%);
@@ -25,7 +23,17 @@ $violet-status: #b99ae8;
 $violet-brief: #eee2ff;
 $violet-detail:#b898e8; // get this from " color
 
-$lighter-grayish-blue: hsl(217, 13%, 72%);
+$primary-very-dark-grayish-blue: hsl(217, 19%, 35%);
+$lighter-gray-name: hsl(208, 33%, 84%);
+$lighter-gray-status: hsl(209, 16%, 59%);
+$lighter-gray-brief: hsl(208, 100%, 95%);
+$lighter-gray-detail: hsl(210, 13%, 69%);
+
+$primary-very-dark-blackish-blue: hsl(219, 29%, 14%);
+$darker-gray-name: hsl(217, 6%, 42%);
+$darker-gray-status: hsl(208, 11%, 73%);
+$darker-gray-brief: hsl(220, 8%, 35%);
+$darker-gray-detail: hsl(210, 3%, 62%);
 
 $font-family: 'Barlow Semi Condensed', sans-serif;
 $font-weight-500: 500;
@@ -50,6 +58,7 @@ $font-size: 13px;
         // background-color: $primary-moderate-violet;
         font-family: $font-family;
         font-size: $font-size;
+        color: $neutral-light-gray;
         padding: 1.8rem 2rem;
 
     }
@@ -93,6 +102,10 @@ $font-size: 13px;
             border: 2px solid $violet-detail;
         }
 
+        .profile_icon.color-3 {
+            border: 2px solid $primary-moderate-violet;
+        }
+
         .profile_name {
             font-size: $font-size;
             font-weight: $font-weight-600;
@@ -103,6 +116,22 @@ $font-size: 13px;
             color: $violet-name;
         }
 
+        .profile_name.color-1 {
+            color: $lighter-gray-name;
+        }
+
+        .profile_name.color-2 {
+            color: $darker-gray-name;
+        }
+
+        .profile_name.color-3 {
+            color: $lighter-gray-name;
+        }
+
+        .profile_name.color-4 {
+            color: $darker-gray-name;
+        }
+
         .profile_status {
             font-weight: $font-weight-500;
             font-size: 0.7rem;
@@ -111,6 +140,22 @@ $font-size: 13px;
 
         .profile_status.color-0 {
             color: $violet-status;
+        }
+
+        .profile_status.color-1 {
+            color: $lighter-gray-status;
+        }
+
+        .profile_status.color-2 {
+            color: $darker-gray-status;
+        }
+
+        .profile_status.color-3 {
+            color: $lighter-gray-status;
+        }
+
+        .profile_status.color-4 {
+            color: $darker-gray-status;
         }
     }
 
@@ -125,6 +170,22 @@ $font-size: 13px;
         color: $violet-brief;
     }
 
+    .brief_opinion.color-1 {
+        color: $lighter-gray-brief;
+    }
+
+    .brief_opinion.color-2 {
+        color: $darker-gray-brief;
+    }
+
+    .brief_opinion.color-3 {
+        color: $lighter-gray-brief;
+    }
+
+    .brief_opinion.color-4 {
+        color: $darker-gray-brief;
+    }
+
 
     .detailed_opinion {
         font-size: 1.058em;
@@ -135,6 +196,22 @@ $font-size: 13px;
 
     .detailed_opinion.color-0 {
         color: $violet-detail;
+    }
+
+    .detailed_opinion.color-1 {
+        color: $lighter-gray-detail;
+    }
+
+    .detailed_opinion.color-2 {
+        color: $darker-gray-detail;
+    }
+
+    .detailed_opinion.color-3 {
+        color: $lighter-gray-detail;
+    }
+
+    .detailed_opinion.color-4 {
+        color: $darker-gray-detail;
     }
 }
 
