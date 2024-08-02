@@ -50,17 +50,14 @@ $font-size: 13px;
 }
 
 .app {
-
     .post {
         width: 70vw;
         margin: 1.5rem 0;
         border-radius: 10px;
-        // background-color: $primary-moderate-violet;
         font-family: $font-family;
         font-size: $font-size;
         color: $neutral-light-gray;
         padding: 1.8rem 2rem;
-
     }
 
     .post-0 {
@@ -162,7 +159,6 @@ $font-size: 13px;
     .brief_opinion {
         font-size: 1.54em;
         font-weight: $font-weight-600;
-        // color: $neutral-light-grayish-blue;
         margin: 0;
     }
 
@@ -185,7 +181,6 @@ $font-size: 13px;
     .brief_opinion.color-4 {
         color: $darker-gray-brief;
     }
-
 
     .detailed_opinion {
         font-size: 1.058em;
