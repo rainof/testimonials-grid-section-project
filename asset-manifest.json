@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/testimonials-grid-section-project/static/css/main.92b3e700.css",
+    "main.js": "/testimonials-grid-section-project/static/js/main.57c47288.js",
+    "static/js/453.098f8e36.chunk.js": "/testimonials-grid-section-project/static/js/453.098f8e36.chunk.js",
+    "static/media/BarlowSemiCondensed-SemiBold.ttf": "/testimonials-grid-section-project/static/media/BarlowSemiCondensed-SemiBold.c0e9a01d31a5aecb006f.ttf",
+    "static/media/BarlowSemiCondensed-Medium.ttf": "/testimonials-grid-section-project/static/media/BarlowSemiCondensed-Medium.98a7f00b2ee77813a131.ttf",
+    "static/media/bg-pattern-quotation.svg": "/testimonials-grid-section-project/static/media/bg-pattern-quotation.6b460e30439432820da6.svg",
+    "index.html": "/testimonials-grid-section-project/index.html",
+    "main.92b3e700.css.map": "/testimonials-grid-section-project/static/css/main.92b3e700.css.map",
+    "main.57c47288.js.map": "/testimonials-grid-section-project/static/js/main.57c47288.js.map",
+    "453.098f8e36.chunk.js.map": "/testimonials-grid-section-project/static/js/453.098f8e36.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92b3e700.css",
+    "static/js/main.57c47288.js"
+  ]
+}
